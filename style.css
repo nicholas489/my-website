@@ -27,6 +27,6 @@ a:visited {
     background: #00308F; /*Background colour becomes dark blue*/
     padding: 1px; /*Adds space between background and text*/
     transform: translate(-10px, -10px); 
-    width: 1280px; /*Gives div a width of 1280px*/
+    width: 105%; /*Gives div a width of 1280px*/
     height: 70px; /*Gives div a height of 70px*/
 }
