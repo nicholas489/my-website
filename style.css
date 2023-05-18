@@ -1,0 +1,32 @@
+body {
+    background-color:#FFFAFA; /*Changes the colour of the page to snowy white*/
+    font-family: 'Noto Sans', sans-serif; /*Changes the style of the font to Noto Sans*/
+}
+
+h3, p, ul {
+    margin-top: 2px; /*Gives 2px margin above selected text*/
+    margin-bottom: 5px; 
+    /*Gives 2px margin below selected text*/
+}
+
+span {
+    float: right; /*Right-indents all span text*/
+}
+
+a {
+    color:#00BFFF; /*Changes the anchor tag to lightblue*/
+}
+a:visited {
+    color: #54626F; /*Changes the anchor tage when visited to grey*/
+}
+
+.title {
+    text-align: center; /*Aligns text in the center of the page*/
+    color: #FFFAFA; /*Changes the text to snowy white*/
+    line-height: 10px; /*Decreases line spacing*/
+    background: #00308F; /*Background colour becomes dark blue*/
+    padding: 1px; /*Adds space between background and text*/
+    transform: translate(-10px, -10px); 
+    width: 1280px; /*Gives div a width of 1280px*/
+    height: 70px; /*Gives div a height of 70px*/
+}
