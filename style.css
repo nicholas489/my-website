@@ -5,8 +5,7 @@ body {
 
 h3, p, ul {
     margin-top: 2px; /*Gives 2px margin above selected text*/
-    margin-bottom: 5px; 
-    /*Gives 2px margin below selected text*/
+    margin-bottom: 5px; /*Gives 5px margin below selected text*/
 }
 
 span {
@@ -20,13 +19,17 @@ a:visited {
     color: #54626F; /*Changes the anchor tage when visited to grey*/
 }
 
-.title {
-    text-align: center; /*Aligns text in the center of the page*/
+.header {
+    text-align: center; /*Aligns text in the center of the page */
     color: #FFFAFA; /*Changes the text to snowy white*/
     line-height: 10px; /*Decreases line spacing*/
     background: #00308F; /*Background colour becomes dark blue*/
     padding: 1px; /*Adds space between background and text*/
-    transform: translate(-10px, -10px); 
-    width: 102%; /*Gives div a width of 1280px*/
+    transform: translate(-2%, -10px);
+    width: 104%; /*Gives div a width of 105%*/
     height: 70px; /*Gives div a height of 70px*/
+}
+
+#title {
+    margin-left: 2%; /*Right indents by 2% of the screen*/
 }
