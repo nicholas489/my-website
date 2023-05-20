@@ -1,11 +1,16 @@
+:root {
+    --primary-colour: #FFFAFA; /*Instantiates --primary-colour to be snowy white*/
+}
+
 body {
-    background-color:#FFFAFA; /*Changes the colour of the page to snowy white*/
+    background-color:var(--primary-colour); /*Changes the colour of the page to snowy white*/
     font-family: 'Noto Sans', sans-serif; /*Changes the style of the font to Noto Sans*/
+    margin: 0%; /*Removes any margins that are default to the body element */
 }
 
 h3, p, ul {
     margin-top: 2px; /*Gives 2px margin above selected text*/
-    margin-bottom: 5px; /*Gives 5px margin below selected text*/
+    margin-bottom: 5px; /*Gives 5px margin below selected text*/   
 }
 
 span {
@@ -16,20 +21,19 @@ a {
     color:#00BFFF; /*Changes the anchor tag to lightblue*/
 }
 a:visited {
-    color: #54626F; /*Changes the anchor tage when visited to grey*/
+    color: #54626F; /*Changes the anchor tag when visited to grey*/
 }
 
 .header {
-    text-align: center; /*Aligns text in the center of the page */
-    color: #FFFAFA; /*Changes the text to snowy white*/
-    line-height: 10px; /*Decreases line spacing*/
-    background: #00308F; /*Background colour becomes dark blue*/
-    padding: 1px; /*Adds space between background and text*/
-    transform: translate(-2%, -10px);
-    width: 104%; /*Gives div a width of 105%*/
-    height: 70px; /*Gives div a height of 70px*/
+   text-align: center; /*Aligns text in the center of the page */
+   color: var(--primary-colour); /*Changes the text to snowy white */
+   line-height: 10px; /*Decreases line spacing */
+   padding: 1px; /* Adds space between background and text */
+   background: #00308F; /*Background colour becomes dark blue */
+   width: 100%; /*Gives div the width of the screen*/
+   height: 70px;  /*Gives div a height of 70px */
 }
 
-#title {
-    margin-left: 2%; /*Right indents by 2% of the screen*/
+#body {
+    margin-left: 8px; /*Gives back the identation that is native to the body element*/
 }
