@@ -61,7 +61,7 @@ export default function Header() {
                 Nicholas Caro Lopez
               </Button> */}
               <Typography variant="h6" color='#3076db'>
-                Nicholas Caro Lopez
+                Nicholas
               </Typography>
             </Box>
           </Box>
@@ -87,12 +87,6 @@ export default function Header() {
             <Button variant="text" size="small" sx={{ minWidth: 0 }}>
                 Contact
             </Button>
-            {/* <Button color="primary" variant="text" size="small">
-                Sign in
-            </Button>
-            <Button color="primary" variant="contained" size="small">
-                Sign up
-            </Button> */}
             {/* <ColorModeIconDropdown /> */}
           </Box>
           <Box sx={{ display: { xs: 'flex', md: 'none' }, gap: 1 }}>
@@ -110,7 +104,7 @@ export default function Header() {
                 },
               }}
             >
-              <Box sx={{ p: 2, backgroundColor: 'background.default' }}>
+              <Box sx={{ p: 2, backgroundColor: 'background.default', color: '#3076db' }}>
                 <Box
                   sx={{
                     display: 'flex',
@@ -122,21 +116,14 @@ export default function Header() {
                   </IconButton>
                 </Box>
 
-                <MenuItem>Features</MenuItem>
-                <MenuItem>Testimonials</MenuItem>
-                <MenuItem>Highlights</MenuItem>
-                <MenuItem>Pricing</MenuItem>
-                <MenuItem>FAQ</MenuItem>
-                <MenuItem>Blog</MenuItem>
+                <MenuItem>Home</MenuItem>
+                <MenuItem>About</MenuItem>
+                <MenuItem>Experience</MenuItem>
+                <MenuItem>Projects</MenuItem>
                 <Divider sx={{ my: 3 }} />
                 <MenuItem>
                   <Button color="primary" variant="contained" fullWidth>
-                    Sign up
-                  </Button>
-                </MenuItem>
-                <MenuItem>
-                  <Button color="primary" variant="outlined" fullWidth>
-                    Sign in
+                    Contact
                   </Button>
                 </MenuItem>
               </Box>
