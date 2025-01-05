@@ -11,7 +11,7 @@ import Box from "@mui/material/Box";
 export default function Home(props: { disableCustomTheme?: boolean }) {
   // TODO: Find out how to edit the default breakpoints that materialUI uses
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen gap-16 font-[family-name:var(--font-geist-sans)]">
       <Header />
       {/* <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <Image

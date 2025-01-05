@@ -1,10 +1,7 @@
 'use client';
 import * as React from 'react';
-import { styled } from '@mui/material/styles';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import Container from '@mui/material/Container';
+import Image from 'next/image';
+import { Box, Container, Grid2, Link, styled, Typography } from '@mui/material';
 
 const Section = styled(Box)(({ theme }) => ({
     padding: theme.spacing(10, 0),
@@ -19,13 +16,40 @@ export default function Contact() {
               Contact Me
             </Typography>
             <Typography variant="body1" align="center" color="textSecondary" sx={{ mb: 4 }}>
-              I’d love to hear from you! Feel free to reach out anytime.
+              I’d love to hear from you! Feel free to reach out anytime through any of the following socials.
             </Typography>
-            <Box sx={{ textAlign: 'center' }}>
-              <Button variant="contained" size="large" color="primary">
-                Send a Message
-              </Button>
-            </Box>
+            <Grid2 container direction={'row'} spacing={8} sx={{justifyContent: 'space-evenly'}}>
+                <Grid2 container size={4} justifyContent="center" alignItems="center">
+                  <Link href="mailto:nickcarolopez@gmail.com" target="_blank" rel="noopener">
+                    <Image 
+                      src="/email.svg"
+                      width={100}
+                      height={100}
+                      alt="Email Logo"
+                    />
+                  </Link>
+                </Grid2>
+                <Grid2 container size={4} justifyContent="center" alignItems="center">
+                  <Link href="https://www.linkedin.com/in/nicholas-caro-lopez/" target="_blank" rel="noopener">
+                    <Image 
+                      src="/linkedin.svg"
+                      width={100}
+                      height={100}
+                      alt="LinkedIn Logo"
+                    />
+                  </Link>
+                </Grid2>
+                <Grid2 container size={4} justifyContent="center" alignItems="center">
+                  <Link href="https://github.com/nicholas489" target="_blank" rel="noopener">
+                    <Image 
+                      src="/github.svg"
+                      width={100}
+                      height={100}
+                      alt="GitHub Logo"
+                    />
+                  </Link>
+                </Grid2>
+            </Grid2>
           </Container>
         </Section>
     );

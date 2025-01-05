@@ -1,9 +1,6 @@
 'use client';
 import * as React from 'react';
-import { styled } from '@mui/material/styles';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
+import { Box, Container, Typography, styled } from '@mui/material';
 
 const Section = styled(Box)(({ theme }) => ({
     padding: theme.spacing(10, 0),
