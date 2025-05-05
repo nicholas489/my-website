@@ -10,10 +10,10 @@ const Section = styled(Box)(({ theme }) => ({
 export default function Experience() {
     // TODO: Replace Grid component with Grid2 component
     return (
-        <Section>
+        <Section id='experience'>
           <Container maxWidth="lg">
             <Typography variant="h3" align="center" color="textPrimary" gutterBottom>
-              Experience
+              Work Experience
             </Typography>
             <Grid container spacing={4}>
               <Grid item xs={12} md={6}>
@@ -21,7 +21,8 @@ export default function Experience() {
                   Software Developer Intern @ Dayforce (formerly Ceridian)
                 </Typography>
                 <Typography variant="body1" color="textSecondary">
-                  Description of your role, achievements, and contributions.
+                  Designed, built, and maintained the core authentication and session-management microservices that power Dayforce’s secure 
+                  login and MFA workflows using .NET/C#, ReactJS and SQL Server. 
                 </Typography>
               </Grid>
               <Grid item xs={12} md={6}>

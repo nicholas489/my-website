@@ -9,7 +9,7 @@ const Section = styled(Box)(({ theme }) => ({
 
 export default function About() {
   return (
-    <Section sx={{ backgroundColor: 'background.paper' }}>
+    <Section id='about' sx={{ backgroundColor: 'background.paper' }}>
       <Container maxWidth="md">
         <Typography variant="h3" align="center" color="textPrimary" gutterBottom>
           About Me

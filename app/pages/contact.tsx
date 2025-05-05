@@ -10,7 +10,7 @@ const Section = styled(Box)(({ theme }) => ({
 
 export default function Contact() {
     return (
-        <Section>
+        <Section id='contact'>
           <Container maxWidth="sm">
             <Typography variant="h3" align="center" color="textPrimary" gutterBottom>
               Contact Me
@@ -22,7 +22,7 @@ export default function Contact() {
                 <Grid2 container size={4} justifyContent="center" alignItems="center">
                   <Link href="mailto:nickcarolopez@gmail.com" target="_blank" rel="noopener">
                     <Image 
-                      src="/email.svg"
+                      src="/svg/email.svg"
                       width={100}
                       height={100}
                       alt="Email Logo"
@@ -32,7 +32,7 @@ export default function Contact() {
                 <Grid2 container size={4} justifyContent="center" alignItems="center">
                   <Link href="https://www.linkedin.com/in/nicholas-caro-lopez/" target="_blank" rel="noopener">
                     <Image 
-                      src="/linkedin.svg"
+                      src="/svg/linkedin.svg"
                       width={100}
                       height={100}
                       alt="LinkedIn Logo"
@@ -42,7 +42,7 @@ export default function Contact() {
                 <Grid2 container size={4} justifyContent="center" alignItems="center">
                   <Link href="https://github.com/nicholas489" target="_blank" rel="noopener">
                     <Image 
-                      src="/github.svg"
+                      src="/svg/github.svg"
                       width={100}
                       height={100}
                       alt="GitHub Logo"

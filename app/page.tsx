@@ -32,7 +32,8 @@ export default function Home(props: { disableCustomTheme?: boolean }) {
           <HomeSection/>
           <AboutSection/>
           <ExperienceSection/>
-          <ProjectsSection/>
+          {/* TODO: Incorporate Github API into the projects section */}
+          {/* <ProjectsSection/> */}
           <ContactSection/>
         </Box>
       </main>

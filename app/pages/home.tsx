@@ -1,6 +1,6 @@
 'use client';
 import * as React from 'react';
-import { Box, Button, Stack, styled, Typography } from '@mui/material';
+import { Box, Button, Link, Stack, styled, Typography } from '@mui/material';
 import Image from 'next/image';
 import me from '../../public/me.jpg';
 
@@ -19,7 +19,7 @@ const Section = styled(Box)(({ theme }) => ({
 
 export default function Home() {
   return (
-    <Section>
+    <Section id='home'>
       <Stack maxWidth="lg" spacing={2}  direction={{ xs: 'column', sm: 'row' }} alignItems={'center'}>
           <Box width={"75%"} padding={"1rem"}>
             <Typography variant="h2" align="center" color="primary" gutterBottom>
@@ -36,7 +36,9 @@ export default function Home() {
             </Typography>
             <Box sx={{ textAlign: 'center' }}>
               <Button variant="contained" size="large" color="primary">
-              Get in Touch
+                <Link href="/Resume.pdf" sx={{ textDecoration: 'none', color: 'white' }} rel="noopener noreferrer">
+                  View Resume
+                </Link>
               </Button>
             </Box>
           </Box>

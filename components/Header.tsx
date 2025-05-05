@@ -13,6 +13,7 @@ import Drawer from '@mui/material/Drawer';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import Typography from '@mui/material/Typography';
+import { Link } from '@mui/material';
 // import ColorModeIconDropdown from '.././theme/ColorModeIconDropdown';
 
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
@@ -73,19 +74,30 @@ export default function Header() {
             }}
           >
             <Button variant="text" size="small">
-                Home
+                <Link href="#home" underline='hover'>
+                  Home
+                </Link>
             </Button>
             <Button variant="text" size="small">
-                About
+                <Link href="#about" underline='hover'>
+                  About
+                </Link>
             </Button>
             <Button variant="text" size="small">
-                Experience
+                <Link href="#experience" underline='hover'>
+                  Experience
+                </Link>
             </Button>
+            {/* TODO: 
             <Button variant="text" size="small" sx={{ minWidth: 0 }}>
-                Projects
-            </Button>
+                <Link href="#projects" underline="hover">
+                  Projects
+                </Link>
+            </Button> */}
             <Button variant="text" size="small" sx={{ minWidth: 0 }}>
-                Contact
+                <Link href="#contact" underline="hover">
+                  Contact
+                </Link>
             </Button>
             {/* <ColorModeIconDropdown /> */}
           </Box>

@@ -19,14 +19,14 @@ const ProjectCard = styled(Paper)(({ theme }) => ({
 export default function Projects() {
     // TODO: Replace Grid component with Grid2 component
     return (
-        <Section sx={{ backgroundColor: 'background.paper' }}>
+        <Section id='projects' sx={{ backgroundColor: 'background.paper' }}>
             <Container maxWidth="lg">
                 <Typography variant="h3" align="center" color="textPrimary" gutterBottom>
                     Projects
                 </Typography>
                 <Grid container spacing={4}>
-                    {[1, 2, 3, 4].map((project) => (
-                        <Grid item xs={12} sm={6} md={3} key={project}>
+                    {[1, 2].map((project) => (
+                        <Grid item xs={12} sm={6} key={project}>
                             <ProjectCard>
                                 <Typography variant="h6" color="primary">
                                     Project {project}
