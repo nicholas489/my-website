@@ -1,7 +1,7 @@
 'use client';
 import * as React from 'react';
 import Image from 'next/image';
-import { Box, Button, Container, Grid2, Link, styled, Typography } from '@mui/material';
+import { Box, Container, Grid2, Link, styled, Typography } from '@mui/material';
 
 const Section = styled(Box)(({ theme }) => ({
     padding: theme.spacing(6, 0),
