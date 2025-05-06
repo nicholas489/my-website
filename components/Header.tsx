@@ -127,12 +127,19 @@ export default function Header() {
                     <CloseRoundedIcon />
                   </IconButton>
                 </Box>
-
-                <MenuItem>Home</MenuItem>
-                <MenuItem>About</MenuItem>
-                <MenuItem>Experience</MenuItem>
-                <MenuItem>Projects</MenuItem>
-                <Divider sx={{ my: 3 }} />
+                  
+                <Box sx={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}>
+                  <MenuItem>Home</MenuItem>
+                  <MenuItem>About</MenuItem>
+                  <MenuItem>Experience</MenuItem>
+                </Box>
+                {/* <MenuItem>Projects</MenuItem> */}
+                <Divider sx={{ my: 1 }} />
                 <MenuItem>
                   <Button color="primary" variant="contained" fullWidth>
                     Contact

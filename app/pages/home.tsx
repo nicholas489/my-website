@@ -6,14 +6,18 @@ import me from '../../public/me.jpg';
 
 const ProfileImage = styled(Image)(({ theme }) => ({
   width: '200px',
-  height: '300px',
+  maxwidth: '300px',
+  height: 'auto',
+  padding: theme.spacing(2),
   margin: '0 auto',
   display: 'block',
+  quality: 100,
+  //border: `3px solid rgba(148, 163, 184, 0.15)`,
 }));
 
 
 const Section = styled(Box)(({ theme }) => ({
-    padding: theme.spacing(10, 0),
+    padding: theme.spacing(6, 0),
     backgroundColor: theme.palette.background.default,
 }));
 
@@ -42,7 +46,7 @@ export default function Home() {
               </Button>
             </Box>
           </Box>
-          <Box sx= {{border: '3px solid rgba(148, 163, 184, 0.15)'}}>
+          <Box>  
             <ProfileImage src={me} alt="Nicholas Caro Lopez" />
           </Box>
       </Stack>

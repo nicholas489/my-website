@@ -3,7 +3,7 @@ import * as React from 'react';
 import { Box, Container, Typography, styled } from '@mui/material';
 
 const Section = styled(Box)(({ theme }) => ({
-    padding: theme.spacing(10, 0),
+    padding: theme.spacing(6, 0),
     backgroundColor: theme.palette.background.default,
 }));
 
