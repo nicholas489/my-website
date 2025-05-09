@@ -1,0 +1,13 @@
+name: Pull resume from GitHub
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  get-file:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        runs: |
+        curl -L https://raw.githubusercontent.com/nicholas489/Resume/master/resume.pdf --output resume.pdf

@@ -42,6 +42,14 @@ export default function Header() {
     setOpen(newOpen);
   };
 
+  const handleMenuItemClick = (section: string) => {
+    const element = document.getElementById(section);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setOpen(false);
+  }
+
   return (
     <AppBar
       position="fixed"
@@ -58,9 +66,6 @@ export default function Header() {
         <StyledToolbar variant="dense" disableGutters>
           <Box sx={{ flexGrow: 1, display: 'flex', alignItems: 'center', px: 0 }}>
             <Box sx={{ display: {md: 'flex' }, width: "40%" }}>
-              {/* <Button variant="text" color="info" size="small">
-                Nicholas Caro Lopez
-              </Button> */}
               <Typography variant="h6" color='#3076db'>
                 Nicholas
               </Typography>
@@ -134,14 +139,25 @@ export default function Header() {
                     alignItems: 'center',
                     justifyContent: 'center',
                   }}>
-                  <MenuItem>Home</MenuItem>
-                  <MenuItem>About</MenuItem>
-                  <MenuItem>Experience</MenuItem>
+                  <MenuItem onClick={() => handleMenuItemClick('home')}>
+                    Home
+                  </MenuItem>
+                  <MenuItem onClick={() => handleMenuItemClick('about')}>
+                    About
+                  </MenuItem >
+                  <MenuItem onClick={() => handleMenuItemClick('experience')}>
+                    Experience
+                  </MenuItem>
+                  {/* <MenuItem>Projects</MenuItem> */}
                 </Box>
-                {/* <MenuItem>Projects</MenuItem> */}
                 <Divider sx={{ my: 1 }} />
                 <MenuItem>
-                  <Button color="primary" variant="contained" fullWidth>
+                  <Button 
+                    color="primary" 
+                    variant="contained" 
+                    fullWidth
+                    onClick={() => handleMenuItemClick('contact')}
+                  >
                     Contact
                   </Button>
                 </MenuItem>
