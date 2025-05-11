@@ -40,7 +40,11 @@ export default function Home() {
             </Typography>
             <Box sx={{ textAlign: 'center' }}>
               <Button variant="contained" size="large" color="primary">
-                <Link href="/resume.pdf" sx={{ textDecoration: 'none', color: 'white' }} rel="noopener noreferrer">
+                <Link 
+                  href="https://raw.githubusercontent.com/nicholas489/Resume/master/resume.pdf" 
+                  sx={{ textDecoration: 'none', color: 'white' }} 
+                  rel="noopener noreferrer"
+                >
                   View Resume
                 </Link>
               </Button>

@@ -1,19 +1,21 @@
 'use client'
 import * as React from 'react';
 import { styled, alpha } from '@mui/material/styles';
-import Box from '@mui/material/Box';
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import Container from '@mui/material/Container';
-import Divider from '@mui/material/Divider';
-import MenuItem from '@mui/material/MenuItem';
-import Drawer from '@mui/material/Drawer';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
-import Typography from '@mui/material/Typography';
-import { Link } from '@mui/material';
+import { 
+  AppBar, 
+  Box, 
+  Button, 
+  Container, 
+  Divider, 
+  Drawer, 
+  IconButton,
+  Link,
+  MenuItem,
+  Toolbar, 
+  Typography 
+} from '@mui/material';
 // import ColorModeIconDropdown from '.././theme/ColorModeIconDropdown';
 
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
@@ -73,7 +75,7 @@ export default function Header() {
           </Box>
           <Box
             sx={{
-              display: { xs: 'none', md: 'flex' },
+              display: { xs: 'none', sm: 'flex' },
               gap: 1,
               alignItems: 'center',
             }}
@@ -99,6 +101,11 @@ export default function Header() {
                   Projects
                 </Link>
             </Button> */}
+            <Button variant="text" size="small">
+                <Link href="#skills" underline='hover' sx={{ scrollBehavior: 'smooth' }}>
+                  Skills
+                </Link>
+            </Button>
             <Button variant="text" size="small" sx={{ minWidth: 0 }}>
                 <Link href="#contact" underline="hover">
                   Contact
@@ -106,7 +113,7 @@ export default function Header() {
             </Button>
             {/* <ColorModeIconDropdown /> */}
           </Box>
-          <Box sx={{ display: { xs: 'flex', md: 'none' }, gap: 1 }}>
+          <Box sx={{ display: { xs: 'flex', sm: 'none' }, gap: 1 }}>
             {/* <ColorModeIconDropdown size="medium" /> */}
             <IconButton aria-label="Menu button" onClick={toggleDrawer(true)}>
               <MenuIcon />
@@ -149,6 +156,9 @@ export default function Header() {
                     Experience
                   </MenuItem>
                   {/* <MenuItem>Projects</MenuItem> */}
+                  <MenuItem onClick={() => handleMenuItemClick('skills')}>
+                    Skills
+                  </MenuItem>
                 </Box>
                 <Divider sx={{ my: 1 }} />
                 <MenuItem>

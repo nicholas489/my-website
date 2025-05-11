@@ -17,7 +17,7 @@ interface ContactCardProps {
 
 export default function ContactCard({ href, src, alt }: ContactCardProps) {
     return (
-        <Grid2 container size={{ xs: 12, sm: 4 }} justifyContent="center" alignItems="center">
+        <Grid2 container size={{ xs: 12, sm: 3 }} justifyContent="center" alignItems="center">
             <Link href={href} target="_blank" rel="noopener">
                 <HoverImage 
                     src={src}

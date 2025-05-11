@@ -11,14 +11,14 @@ const Section = styled(Box)(({ theme }) => ({
 export default function Contact() {
     return (
         <Section id='contact'>
-          <Container maxWidth="sm">
+          <Container maxWidth="md">
             <Typography variant="h3" align="center" color="textPrimary" gutterBottom>
               Contact Me
             </Typography>
             <Typography variant="body1" align="center" color="textSecondary" sx={{ mb: 4 }}>
               I’d love to hear from you! Feel free to reach out anytime through any of the following socials.
             </Typography>
-            <Grid2 container direction={'row'} spacing={8} sx={{justifyContent: 'space-evenly'}}>
+            <Grid2 container direction={'row'} sx={{justifyContent: 'center'}}>
               <ContactCard 
                 href='mailto:nickcarolopez@gmail.com'
                 src="/svg/email.svg"
