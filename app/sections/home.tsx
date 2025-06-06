@@ -12,7 +12,6 @@ const ProfileImage = styled(Image)(({ theme }) => ({
   margin: '0 auto',
   display: 'block',
   quality: 100,
-  //border: `3px solid rgba(148, 163, 184, 0.15)`,
 }));
 
 

@@ -1,7 +1,7 @@
 'use client';
 import * as React from 'react';
 import { Box, Container, Grid2, styled, Typography } from '@mui/material';
-import ContactCard from '@/components/ContactCard';
+import ContactCard from '@/components/ContactIcon';
 
 const Section = styled(Box)(({ theme }) => ({
     padding: theme.spacing(6, 0),
@@ -15,10 +15,10 @@ export default function Contact() {
             <Typography variant="h3" align="center" color="textPrimary" gutterBottom>
               Contact Me
             </Typography>
-            <Typography variant="body1" align="center" color="textSecondary" sx={{ mb: 4 }}>
+            <Typography variant="body1" align="center" color="textSecondary" sx={{ mb: 3 }}>
               I’d love to hear from you! Feel free to reach out anytime through any of the following socials.
             </Typography>
-            <Grid2 container direction={'row'} sx={{justifyContent: 'center'}}>
+            <Grid2 container direction={'row'} rowSpacing={3} sx={{justifyContent: 'center'}}>
               <ContactCard 
                 href='mailto:nickcarolopez@gmail.com'
                 src="/svg/email.svg"

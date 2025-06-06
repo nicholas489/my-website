@@ -1,7 +1,7 @@
 'use client';
 import * as React from 'react';
-import Image from 'next/image';
 import { Box, Container, Grid2, styled, Typography } from "@mui/material";
+import SkillIcon from '@/components/SkillIcon';
 
 const Section = styled(Box)(({ theme }) => ({
     padding: theme.spacing(6, 0),
@@ -16,42 +16,30 @@ export default function Skills() {
                     Skills
                 </Typography>
                 <Grid2 container direction={'row'} spacing={{ xs: 8, sm: 4, md: 8 }} sx={{justifyContent: 'space-evenly'}}>
-                    <Grid2 container size={{ xs: 12, sm: 4, md: 2 }} direction={'column'} justifyContent="center" alignItems="center" spacing={2}>
-                        <Image src="/svg/python.svg" alt="Python Logo" width={100} height={100} />
-                        <Typography variant="body1" align="center" color="textSecondary">
-                            Python
-                        </Typography>
-                    </Grid2>
-                    <Grid2 container size={{ xs: 12, sm: 4, md: 2 }} direction={'column'} justifyContent="center" alignItems="center" spacing={2}>
-                        <Image src="/svg/csharp.svg" alt="C# Logo" width={100} height={100} />
-                        <Typography variant="body1" align="center" color="textSecondary">
-                            C#
-                        </Typography>
-                    </Grid2>
-                    <Grid2 container size={{ xs: 12, sm: 4, md: 2 }} direction={'column'} justifyContent="center" alignItems="center" spacing={2}>
-                        <Image src="/svg/dotnet.svg" alt=".NET Logo" width={100} height={100} />
-                        <Typography variant="body1" align="center" color="textSecondary">
-                            .NET
-                        </Typography>
-                    </Grid2>
-                    <Grid2 container size={{ xs: 12, sm: 4, md: 2 }} direction={'column'} justifyContent="center" alignItems="center" spacing={2}>
-                        <Image src="/svg/javascript.svg" alt="JavaScript Logo" width={100} height={100} />
-                        <Typography variant="body1" align="center" color="textSecondary">
-                            JavaScript
-                        </Typography>
-                    </Grid2>
-                    <Grid2 container size={{ xs: 12, sm: 4, md: 2 }} direction={'column'} justifyContent="center" alignItems="center" spacing={2}>
-                        <Image src="/svg/react.svg" alt="React Logo" width={100} height={100} />
-                        <Typography variant="body1" align="center" color="textSecondary">
-                            React
-                        </Typography>
-                    </Grid2>
-                    <Grid2 container size={{ xs: 12, sm: 4, md: 2 }} direction={'column'} justifyContent="center" alignItems="center" spacing={2}>
-                        <Image src="/svg/java.svg" alt="React Logo" width={100} height={100} />
-                        <Typography variant="body1" align="center" color="textSecondary">
-                            Java
-                        </Typography>
-                    </Grid2>
+                    <SkillIcon 
+                        src="/svg/python.svg"
+                        caption="Python"
+                    />
+                    <SkillIcon
+                        src="/svg/csharp.svg"
+                        caption="C#"
+                    />
+                    <SkillIcon
+                        src="/svg/dotnet.svg"
+                        caption=".NET"
+                    />
+                    <SkillIcon
+                        src="/svg/javascript.svg"
+                        caption="JavaScript"
+                    />
+                    <SkillIcon
+                        src="/svg/react.svg"
+                        caption="React"
+                    />
+                    <SkillIcon
+                        src="/svg/java.svg"
+                        caption="Java"
+                    />
                 </Grid2>
           </Container>
         </Section>
