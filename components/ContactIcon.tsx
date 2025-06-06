@@ -24,6 +24,7 @@ export default function ContactCard({ href, src, alt }: ContactCardProps) {
                     width={100}
                     height={100}
                     alt={alt}
+                    style={{width: "100px", height: "100px",  objectFit: "contain" }}
                 />
             </Link>
         </Grid2>

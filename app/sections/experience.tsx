@@ -17,18 +17,25 @@ export default function Experience() {
             </Typography>
             <Grid2 container spacing={4}>
               <JobCard 
+                iconSrc="/svg/dayforce.svg"
+                iconPadding={13}
+                companyName="Dayforce (formerly Ceridian)"
+                companyUrl='https://dayforce.com'
                 role="Software Developer Intern"
-                company="Dayforce (formerly Ceridian)"
-                description="Designed, built, and maintained the core authentication and session-management 
-                microservices that power Dayforce’s secure login and MFA workflows using .NET/C#, ReactJS 
-                and SQL Server."
+                duration="May 2024 - Apr 2025"
+                description="Designed, built, and maintained core authentication and session management 
+                microservices powering Dayforce’s secure login and MFA workflows, utilizing .NET/C#, 
+                ReactJS, and SQL Server."
               />
               <JobCard 
+                iconSrc="/svg/tmu.svg"
+                companyName="Laboratory for Translational Medicine, Toronto Metropolitan University"
+                companyUrl='https://torontomu.ca/laboratory-translational-medicine/'
                 role="Software Engineer"
-                company="Laboratory for Translational Medicine, TMU"
-                description="Researched and developed an advanced image‐based motion‐tracking extension into 
-                the open‐source 3D Slicer platform using Python, PyQt, and Docker—to improve success rates in 
-                radiation therapy treatment planning."
+                duration="Sep 2023 - Apr 2024"
+                description="Researched and developed an advanced, image-based motion-tracking extension 
+                for the open-source 3D Slicer platform using Python, PyQt, and Docker, to improve success rates in radiation therapy 
+                treatment planning."
               />
             </Grid2>
           </Container>
