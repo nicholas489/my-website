@@ -5,14 +5,13 @@ import JobCard from '@/components/JobCard';
 
 const Section = styled(Box)(({ theme }) => ({
     padding: theme.spacing(6, 0),
-    backgroundColor: theme.palette.background.default,
 }));
 
 export default function Experience() {
     return (
         <Section id='experience'>
           <Container maxWidth="lg">
-            <Typography variant="h3" align="center" color="textPrimary" gutterBottom>
+            <Typography variant="h3" align="center" gutterBottom>
               Work Experience
             </Typography>
             <Grid2 container spacing={4}>

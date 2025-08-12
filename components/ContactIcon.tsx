@@ -3,8 +3,9 @@ import Image from 'next/image';
 import { Grid2, Link, styled }  from '@mui/material';
 
 const HoverImage = styled(Image)(() => ({
-  transition: 'transform 0.3s ease, box-shadow 0.3s ease',
-  '&:hover': {
+    filter: 'invert(1) brightness(2)',
+    transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+    '&:hover': {
     transform: 'scale(1.05)',
   },
 }));

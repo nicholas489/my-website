@@ -4,17 +4,16 @@ import { Box, Container, Typography, styled } from '@mui/material';
 
 const Section = styled(Box)(({ theme }) => ({
     padding: theme.spacing(6, 0),
-    backgroundColor: theme.palette.background.default,
 }));
 
 export default function About() {
   return (
-    <Section id='about' sx={{ backgroundColor: 'background.paper' }}>
+    <Section id='about'>
       <Container maxWidth="md">
-        <Typography variant="h3" align="center" color="textPrimary" gutterBottom>
+        <Typography variant="h3" align="center" gutterBottom>
           About Me
         </Typography>
-        <Typography variant="body1" align="center" color="textSecondary">
+        <Typography variant="body1" align="center">
             Hola, mucho gusto! My name is Nick. I am a 3rd year Computer Science Co-op Student at Toronto Metropolitan (formerly Ryerson) 
             University and I enjoy solving complex problems. I spend most of my time programming, the reasoning varying drastically anywhere
             from my university courses or professional work all the way to tinkering with the latest and most popular technologies out of
