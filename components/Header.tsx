@@ -1,6 +1,6 @@
 'use client'
 import * as React from 'react';
-import { styled, alpha } from '@mui/material/styles';
+import { styled } from '@mui/material/styles';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import { 
@@ -18,7 +18,7 @@ import {
 } from '@mui/material';
 // import ColorModeIconDropdown from '.././theme/ColorModeIconDropdown';
 
-const StyledToolbar = styled(Toolbar)(({ theme }) => ({
+const StyledToolbar = styled(Toolbar)(() => ({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
