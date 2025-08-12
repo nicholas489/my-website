@@ -5,17 +5,16 @@ import ContactCard from '@/components/ContactIcon';
 
 const Section = styled(Box)(({ theme }) => ({
     padding: theme.spacing(6, 0),
-    backgroundColor: theme.palette.background.default,
 }));
 
 export default function Contact() {
     return (
         <Section id='contact'>
           <Container maxWidth="md">
-            <Typography variant="h3" align="center" color="textPrimary" gutterBottom>
+            <Typography variant="h3" align="center" gutterBottom>
               Contact Me
             </Typography>
-            <Typography variant="body1" align="center" color="textSecondary" sx={{ mb: 3 }}>
+            <Typography variant="body1" align="center" sx={{ mb: 3 }}>
               I’d love to hear from you! Feel free to reach out anytime through any of the following socials.
             </Typography>
             <Grid2 container direction={'row'} rowSpacing={3} sx={{justifyContent: 'center'}}>
