@@ -116,7 +116,7 @@ export default function Header() {
                 },
               }}
             >
-              <Box sx={{ p: 2, backgroundColor: 'background.default', color: '#3076db' }}>
+              <Box sx={{ p: 2, backgroundColor: '#1e293b', color: '#3076db' }}>
                 <Box
                   sx={{
                     display: 'flex',
