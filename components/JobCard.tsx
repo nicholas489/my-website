@@ -15,13 +15,14 @@ interface JobCardProps {
 
 export default function JobCard({ iconSrc, iconPadding = 0, companyName, companyUrl, role, duration, description }: JobCardProps) {
     return (
-       <Grid2 size={{ sm: 12, md: 6 }} sx={{ display: "flex", justifyContent: "center" }}>
+       <Grid2 
+            size={{ sm: 12, md: 6 }} sx={{ display: "flex", justifyContent: "center" }}>
             <Card
                 sx={{
                     position: "relative",
                     bgcolor: "#1e293b", 
                     borderRadius: 2,            
-                    border: "1px solid rgba(100, 116, 139, 0.3)", 
+                    boxShadow: '0 8px 32px 0 rgba(97,218,251,0.10), 0 1.5px 6px 0 rgba(0,0,0,0.10)',
                     display: "flex",
                     alignItems: "flex-start",
                     p: 2,                      
