@@ -19,7 +19,19 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Nicholas Caro Lopez",
-  description: "My Personal Website",
+  description: "Passionate Computer Science undergraduate student at Toronto Metropolitan University",
+  authors: [{ name: "Nicholas Caro Lopez" }],
+  openGraph: {
+    title: "Nicholas Caro Lopez",
+    description: "Passionate Computer Science undergraduate student at Toronto Metropolitan University",
+    type: "website",
+    url: "https://nickcarolopez.ca",
+    images: [
+      {
+        url: "https://nickcarolopez.ca/cn_tower.jpg",
+      }
+    ]
+  },
 };
 
 export default function RootLayout({

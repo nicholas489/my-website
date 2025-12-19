@@ -27,7 +27,7 @@ export default function Home() {
     <Section id='home'>
       <Stack maxWidth="lg" spacing={2}  direction={{ xs: 'column', sm: 'row' }} alignItems={'center'}>
           <Box width={"75%"} padding={"1rem"}>
-            <Typography variant="h2" align="center" gutterBottom sx={{ fontWeight: 'bold' }}>
+            <Typography variant="h1" align="center" gutterBottom sx={{ fontWeight: 'bold', fontSize: "4rem" }}>
               Nicholas Caro Lopez
             </Typography>
             <Typography variant="body1" align="center" gutterBottom>
