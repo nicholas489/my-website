@@ -20,8 +20,8 @@ export default function Home() {
         result.sort((a: { created_at: number; }, b: { created_at: number; }) => {
           return a.created_at > b.created_at;
         });
+        
         const links: string[] = [];
-        console.log(result)
 
         for (const project of result) {
           if (project.name === "la-liga-match-predictor" || project.name === "terrahacks-portal") {

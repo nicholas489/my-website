@@ -23,8 +23,6 @@ const projects = [
 ];
 
 export default function Projects({ links }: { links: string[]; }) {
-    console.log(links)
-  
     return (
     <Box id="projects" sx={{ py: 10, background: 'transparent' }}>
       <Container maxWidth="lg">
